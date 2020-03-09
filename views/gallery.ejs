@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="/">Home</a>
+  </header>
+  <main class="gallery">
+    <div class="gallery-title">
+      <h3>NATIONAL GEOGRAPHIC GALLERY</h3>
+    </div>
+    <div class="animal-grid">
+      <% 
+       for(data of gallery){ %>
+      <figure>
+        <a href="/gallery/<%= data.id  %> ">
+          <img src="../images/sm/<%= data.fileName  %> " alt="<%= data.title %>">
+        </a>
+        <figcaption>
+          <div class="animal-name"><%= data.title  %></div>
+          <div class="photographer"><%= data.attribution.credit  %></div>
+        </figcaption>
+
+      </figure>
+      <%  }  %>
+    </div>
+
+  </main>
+</body>
+
+</html>

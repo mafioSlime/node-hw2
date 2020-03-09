@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal</title>
+  <link rel="stylesheet" href="/css/individual.css" />
+</head>
+
+<body>
+  <section class="gallery-cta">
+    <a href="/gallery">Gallery</a>
+  </section>
+
+  <main class="gallery">
+    <figure>
+      <% for(data of gallery){  if(data.id == title) { %>
+
+      <img src="../images/lrg/<%= data.fileName  %> " alt="<%= data.title %>" />
+      <% break;} } %>
+      <figcaption>
+        <div class="animal-name">
+          <%= data.title %>
+        </div>
+        <div class="photographer">
+          <a href="<%= data.attribution.url %>" class="link"> <%= data.attribution.credit %></a>
+          from <%= data.attribution.source %>
+        </div>
+      </figcaption>
+    </figure>
+  </main>
+</body>
+
+</html>

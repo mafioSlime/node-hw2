@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-image: linear-gradient(to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url("../images/lion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+img {
+  width: 100%;
+  height: 300px;
+  border: 2px solid gold;
+}
+
+
+.gallery-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.gallery-cta a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: goldenrod;
+  padding: 0.6rem;
+  border: 2px solid gold;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+.gallery-cta a:hover {
+  opacity: 0.7;
+
+}
+
+.gallery {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+figure {
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.animal-name {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin: 2rem auto;
+}
+
+.link {
+  color: gold;
+  text-decoration: none;
+}
+
+.photographer {
+  font-size: 1.5rem;
+}

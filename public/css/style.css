@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-image: linear-gradient(to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
+    url("../images/monkey.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  border: 2px solid gold;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+header {
+  margin: 2rem 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: gold;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 2px solid gold;
+  border-radius: 10px;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+
+
+.gallery-intro a:hover {
+  opacity: 0.7;
+}
+
+.gallery {
+  max-width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0.5rem;
+
+}
+
+.gallery-title {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  color: #fff;
+  margin: 4rem auto 6rem;
+  text-shadow: 2px 2px #000;
+}
+
+.animal-name {
+  font-size: 1.6rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.photographer {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: gold;
+
+}
+
+@media (min-width: 658px) {
+  .animal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-grid {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
