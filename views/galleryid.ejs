@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
   <section class="gallery-cta">
     <a href="/gallery">Gallery</a>
   </section>
@@ -16,7 +17,6 @@
   <main class="gallery">
     <figure>
       <% for(data of gallery){  if(data.id == title) { %>
-
       <img src="../images/lrg/<%= data.fileName  %> " alt="<%= data.title %>" />
       <% break;} } %>
       <figcaption>
@@ -24,7 +24,7 @@
           <%= data.title %>
         </div>
         <div class="photographer">
-          <a href="<%= data.attribution.url %>" class="link"> <%= data.attribution.credit %></a>
+          <a href="<%= data.attribution.url %>" class="link" target="_blank"> <%= data.attribution.credit %></a>
           from <%= data.attribution.source %>
         </div>
       </figcaption>
